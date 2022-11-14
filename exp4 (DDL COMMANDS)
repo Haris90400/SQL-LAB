@@ -1,0 +1,50 @@
+// craete table 
+
+create table Student
+(
+	s_id int primary key,
+	s_name char,
+	city char(20),
+	pincode int,
+	DOB date
+);
+SELECT *from Student;
+
+create table Course
+(
+	c_id int primary key,
+	c_name char(20),
+	Fees numeric(8,2),
+	Credits int
+);
+SELECT *from Course;
+
+create table Faculty
+(
+	f_id int primary key,
+	f_name char(20),
+	Title char(20),
+	Email_id varchar(25)
+);
+SELECT *from Faculty
+
+create table Department
+(
+	d_no int primary key,
+	d_name char(20),
+	Dlocation varchar(25)
+);
+SELECT *from Department
+
+//ALTER TABLE
+
+1.To add a new column in existing table
+Alter TABLE Student ADD COLUMN s_age int;
+select *from Student
+
+2.To drop a column
+Alter TABLE Student DROP COLUMN s_age;
+select *from Student
+
+3.To change the column name
+ALTER TABLE Student RENAME to Student_info;
