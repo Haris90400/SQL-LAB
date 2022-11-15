@@ -1,0 +1,27 @@
+//AGGREFATE
+
+SELECT avg(f_salary) from faculty
+
+SELECT max(f_salary) from faculty
+
+SELECT min(f_salary) from faculty
+
+SELECT sum(f_salary) from faculty
+
+SELECT count(f_salary) from faculty
+
+//CLAUSES
+
+1.Group by
+SELECT faculty.f_salary,
+max(f_salary)
+FROM faculty
+GROUP BY faculty.f_salary
+
+2.Having
+
+SELECT faculty.f_salary,
+max(f_salary)
+FROM faculty
+GROUP BY faculty.f_salary
+HAVING faculty.f_salary>40000;
