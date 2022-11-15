@@ -1,0 +1,11 @@
+select c_id,c_name from Course
+UNION
+select s_id,s_name from Student
+
+select c_id,c_name from Course
+INTERSECT
+select s_id,s_name from Student
+
+select c_id,c_name from Course
+EXCEPT
+select s_id,s_name from Student
